@@ -28,7 +28,7 @@ export function Button(props) {
 
    let id = "btn" + props.value.replace(/\s+/g, '');
 
-   return <Link href={props.href} className={css.btn} >{props.value}</Link >
+   return <Link href={props.href}><input type="button" className={css.btn} value={props.value} /></Link>
 
 }
 
