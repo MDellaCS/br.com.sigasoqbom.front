@@ -24,18 +24,35 @@ export default function Home() {
 
       try {
          const response = await axios.post('http://localhost:8080/alunos', {
-            ra: "" + gerarRA(),
-            nome: getNome,
-            dataNasc: getNascimento,
-            nomeSocial: getNomeSocial,
-            emailPessoal: getEmail,
-            dataConc2grau: getDataConclusao,
-            cpf: getCPF,
-            instConc2grau: getLugarConclusao,
-            ptVestibular: parseInt(getPtVestibular),
-            posVestibular: parseInt(getPosVestibular),
-            emailCorporativo: gerarEmail(),
-            idCurso: getCurso
+            // ra: "" + gerarRA(),
+            // nome: getNome,
+            // dataNasc: getNascimento,
+            // nomeSocial: getNomeSocial,
+            // emailPessoal: getEmail,
+            // dataConc2grau: getDataConclusao,
+            // cpf: getCPF,
+            // instConc2grau: getLugarConclusao,
+            // ptVestibular: parseInt(getPtVestibular),
+            // posVestibular: parseInt(getPosVestibular),
+            // emailCorporativo: gerarEmail(),
+            // dataMatricula: "2022-01-15",
+            // dataLimiteMatricula: "2024-12-01",
+            // idCurso: getCurso
+
+            ra: "1234567892345",
+            nome: "Fulano de Tal",
+            dataNasc: "1990-01-01",
+            nomeSocial: "NomeSocial",
+            emailPessoal: "fulano@email.com",
+            dataConc2grau: "2010-01-01",
+            cpf: "12345678909",
+            instConc2grau: "Instituição",
+            ptVestibular: 80,
+            posVestibular: 90,
+            emailCorporativo: "fulano@empresa.com",
+            dataMatricula: "2022-01-15",
+            dataLimiteMatricula: "2024-12-01",
+            idCurso: 1
          });
 
          console.log('Salvo com sucesso:', response.data);
